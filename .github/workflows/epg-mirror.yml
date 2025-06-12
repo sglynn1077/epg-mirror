@@ -23,4 +23,7 @@ jobs:
           git config user.email "github-actions@github.com"
           git add epg.xml
           git commit -m "Update EPG [skip ci]" || echo "No changes to commit"
+          git pull --rebase
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
