@@ -29,3 +29,4 @@ jobs:
           git add epg.xml
           git commit -m "Update EPG" || echo "Nothing to commit"
           git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }} HEAD:main
+
